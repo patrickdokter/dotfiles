@@ -1,0 +1,19 @@
+# Mac OS X hidden files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# PhpStorm
+.idea
+
+# vs code
+.vscode
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+.phpunit-watcher-cache.php
+.phpunit.result.cache

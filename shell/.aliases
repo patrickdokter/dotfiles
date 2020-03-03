@@ -1,0 +1,30 @@
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+alias chrome="open -a Google\ Chrome"
+alias hosts="sudo vi /etc/hosts"
+alias sshconfig="vi ~/.ssh/config"
+alias pubkey="cat $HOME/.ssh/id_rsa.pub | pbcopy"
+alias reload="source $HOME/.zshrc"
+alias path="pwd"
+alias killdns="sudo killall -HUP mDNSResponder"
+alias week="date +%V"
+# Laravel
+alias mfs="php artisan migrate:fresh --seed"
+alias art="php artisan"
+
+# Composer
+alias c="composer"
+alias cu="composer update"
+alias cr="composer require"
+alias ci="composer install"
+alias cda="composer dump-autoload -o"
+
+# IP addresses
+alias ip="curl https://diagnostic.opendns.com/myip ; echo"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Git
+alias gc="git checkout"
+alias wip="git add . && git commit -m 'wip'"
+alias gin="git init"
+alias nah="git reset --hard && git clean -df"
+alias cleanslate="git checkout --orphan squashed-master master && git commit -m "First commit" && git branch -M squashed-master master"
